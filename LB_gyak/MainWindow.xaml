@@ -1,0 +1,28 @@
+﻿<Window x:Class="LB_gyak.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LB_gyak"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="tb_mezo" HorizontalAlignment="Left" Margin="264,68,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="196" Height="46" KeyDown="Enternyomas"/>
+        <ListBox x:Name="lb_lista" Margin="172,207,248,0"/>
+        <TextBlock HorizontalAlignment="Left" Margin="241,10,0,0" TextWrapping="Wrap" Text="Írd be amit szeretnél és huss, meg is jelenik." VerticalAlignment="Top" Height="53" Width="240"
+                   FontSize="15"/>
+        <Button Content="Hozzáadás" HorizontalAlignment="Left" Margin="271,117,0,0" VerticalAlignment="Top" Height="32" Width="180" RenderTransformOrigin="0.787,0.302" Click="Hozzaad">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.159"/>
+                    <TranslateTransform X="0.017" Y="0.158"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button Content="Minden törlése" HorizontalAlignment="Left" Margin="454,159,0,0" VerticalAlignment="Top" Height="38" Width="143" Click="Sztorno"/>
+        <Button Content="Kijelölt törlése" HorizontalAlignment="Left" Margin="126,159,0,0" VerticalAlignment="Top" Height="38" Width="143" Click="Torles"/>
+        <Label x:Name="l_label" Content="A termékek száma: 0" HorizontalAlignment="Left" Margin="274,163,0,0" VerticalAlignment="Top" FontSize="15"/>
+    </Grid>
+</Window>
